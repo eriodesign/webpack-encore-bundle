@@ -1,5 +1,5 @@
 {
-    "name": "symfony/webpack-encore-bundle",
+    "name": "eriodesign/webpack-encore-bundle",
     "description": "Integration of your Symfony app with Webpack Encore",
     "license": "MIT",
     "type": "symfony-bundle",
