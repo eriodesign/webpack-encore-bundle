@@ -72,6 +72,8 @@ class EntrypointLookup implements EntrypointLookupInterface, IntegrityDataProvid
 
     private function getEntryFiles(string $entryName, string $key): array
     {
+        // 每次都强制重置
+        $this->reset();
         $this->validateEntryName($entryName);
         $entriesData = $this->getEntriesData();
         $entryData = $entriesData['entrypoints'][$entryName] ?? [];
